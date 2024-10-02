@@ -10,7 +10,7 @@ class QuizBrain:
         ans = ""
 
         while ans != "true" and ans != "false":
-            ans = input(f"{ques.text}. True or False: ").lower()
+            ans = input(f"Q{self.question_number}: {ques.text} (True/False)?: ").lower()
             if ans != "true" and ans != "false":
                 print("Please enter either True or False")
 
